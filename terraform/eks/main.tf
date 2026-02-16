@@ -8,12 +8,8 @@ resource "aws_eks_cluster" "cluster" {
   role_arn = var.cluster_role_arn
   version  = "1.31"
 
-  bootstrap_self_managed_addons = false
 
   vpc_config {
-    endpoint_private_access = true
-    endpoint_public_access  = true
-
     subnet_ids = [
       var.subnet_1,
       var.subnet_2,
