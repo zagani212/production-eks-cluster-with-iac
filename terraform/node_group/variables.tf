@@ -1,0 +1,10 @@
+variable "ami_type" {}
+variable "instance_types" {}
+variable "desired_size" {}
+variable "min_size" {}
+variable "max_size" {}
+variable "max_unavailable" {}
+variable "node_role_arn" {}
+variable "subnet_1" {}
+variable "subnet_2" {}
+variable "cluster" {}
